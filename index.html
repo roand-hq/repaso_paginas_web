@@ -1,76 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pagina de repaso</title>
-    <link rel="stylesheet" type="text/css" href="./style.css">
-    <link rel="shortcut icon" type="image / x-icon" href="https://e7.pngegg.com/pngimages/5/56/png-clipart-website-development-html5-logo-world-wide-web-consortium-world-wide-web-angle-web-design-thumbnail.png">
-</head>
-<body>
-    <div class="category">
-        <h1>HTML</h1>
-        <ul>
-            <li>
-                <h2>¿Qué es HTML y cuál es su función principal en el desarrollo web?</h2>
-                <p>HTML es la abreviatura de hypertext markup language (lenguaje de marcado de hipertexto) es un lenguaje que permite darle estructura a una página web y junto con CSS (cascading style sheets) y JavaScript permiten la creación de sitios web. Dicho de otro modo, es el lenguaje que los navegadores procesan para poder cargar páginas web.</p>
-            </li>
-            <li>
-                <h2>¿Qué son las etiquetas en HTML y para que se usan?</h2>
-                <p>Las etiquetas básicamente le dicen al navegador como tiene que tratar ese fragmento de código.</p>
-            </li>
-            <li>
-                <h2>Proporciona ejemplos de algunas de las etiquetas HTML más comunes.</h2>
-                <ul style="list-style: none;">
-                    <li><strong>< p>: </strong> Se usa para texto simple o párrafos</li>
-                    <li><strong> < strong>: </strong> Se usa para darle el efecto de negrita a un texto</li>
-                    <li><strong> < h1 - h6>:</strong> Son etiquetas para títulos, siendo h1 títulos principales y las demás para títulos cada vez menos importantes.</li>
-                    <li><strong> < ol>  y < ul>:</strong> Son etiquetas para listas, siendo ol para listas ordenadas y ul para listas sin ordenar.</li>
-                    <li><strong> < link>:</strong> Permite enlazar un archivo CSS al de HTML.</li>
-                </ul>
-            </li>
-        </ul>
-    </div>
-    <div class="category">
-        <h1>CSS</h1>
-        <ul>
-            <li>
-                <h2>¿Qué es CSS y cómo se utiliza para dar estilo a una página web?</h2>
-                <p> CSS es un lenguaje que se encarga de darle estilo al código de HTML. Si HTML es el cuerpo de la página, CSS se encarga de elegir un outfit que lo haga verse bien. Esto se puede hacer de muchas formas, pero la más usada es crear un archivo CSS y enlazarlo en la etiqueta <strong>head</strong> utilizando la etiqueta <strong>link</strong>.</p>
-            </li>
-            <li>
-                <h2>¿Cuáles son las propiedades más importantes de CSS?</h2>
-                <ul style="list-style: none;">
-                    <li><strong>background: </strong> Permite cambiar el fondo de un elemento, ya sea a una imagen, color o textura.</li>
-                    <li><strong>color: </strong>Cambia el color del texto de un elemento</li>
-                    <li><strong>font-size: </strong>Cambia el tamaño de la letra de un elemento</li>
-                    <li><strong>opacity: </strong>Controla la opacidad de un elemento, es decir que tan visible es.</li>
-                </ul>
-            </li>
-            <li>
-                <h2>Explica el modelo de caja (box model) en CSS</h2>
-                <p>Consiste en organizar los objetos en "cajas" que cuentan con 4 áreas.</p>
-                <p><strong>Contenido: </strong> Área donde se muestra el texto, imagen o cualquier contenido que se quiera mostrar.</p>
-                <p><strong>Relleno (padding): </strong> Espacio entre el contenido y el borde del elemento.</p>
-                <p><strong>Borde: </strong> Es la línea que rodea al contenido y el padding. Este puede ser visible o no, dependiendo del diseño de la página.</p>
-                <p><strong>Margen: </strong>Es el espacio entre los elementos adyacentes.</p>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      type="image / x-icon"
+      href="https://e7.pngegg.com/pngimages/5/56/png-clipart-website-development-html5-logo-world-wide-web-consortium-world-wide-web-angle-web-design-thumbnail.png"
+    />
+  </head>
 
+  <body>
+    <div class="category">
+      <h1>HTML</h1>
+      <ul>
+        <li>
+          <h2>
+            ¿Qué es HTML y cuál es su función principal en el desarrollo web?
+          </h2>
+          <p>
+            HTML es la abreviatura de hypertext markup language (lenguaje de
+            marcado de hipertexto) es un lenguaje que permite darle estructura a
+            una página web y junto con CSS (cascading style sheets) y JavaScript
+            permiten la creación de sitios web. Dicho de otro modo, es el
+            lenguaje que los navegadores procesan para poder cargar páginas web.
+          </p>
+        </li>
+        <li>
+          <h2>¿Qué son las etiquetas en HTML y para que se usan?</h2>
+          <p>
+            Las etiquetas básicamente le dicen al navegador como tiene que
+            tratar ese fragmento de código.
+          </p>
+        </li>
+        <li>
+          <h2>
+            Proporciona ejemplos de algunas de las etiquetas HTML más comunes.
+          </h2>
+          <ul style="list-style: none">
+            <li><strong>< p>: </strong> Se usa para texto simple o párrafos</li>
+            <li>
+              <strong> < strong>: </strong> Se usa para darle el efecto de
+              negrita a un texto
             </li>
             <li>
-                <h2>¿Qué es el diseño responsive y como se logra en CSS?</h2>
-                <p>Normalmente cuando una página excede el tamaño de la pantalla del usuario, algunos elementos dejan de ser visibles y requieren scrollear para poder ser vistos. El diseño responsive se encarga de adaptar el tamaño de la página y sus elementos dependiendo del tamaño de la pantalla del usuario. Este se puede lograr de 2 formas:</p>
-                <p><strong>Uso de unidades relativas: </strong>Si se utilizan unidades relativas para dar tamaño a los elementos de la página, estos se adaptaran automáticamente a la pantalla. Por ejemplo, si en lugar de darle un tamaño de 100px a un elemento le decimos que ocupe el 5% de la pantalla, este crecerá o disminuirá su tamaño para adaptarse a la pantalla que este utilizando el usuario siempre.</p>
-                <p><strong>Uso de media queries: </strong> Utilizamos la propiedad @media de css, le damos un tamaño de pantalla máximo y ponemos dentro las propiedades de los elementos. Este método tiene la ventaja de poder darle diseños distintos a un mismo elemento dependiendo de la pantalla del usuario, así que un elemento que es azul para pantallas de 480 píxeles puede ser rojo en las pantallas de 768.</p>
+              <strong> < h1 - h6>:</strong> Son etiquetas para títulos, siendo
+              h1 títulos principales y las demás para títulos cada vez menos
+              importantes.
             </li>
-        </ul>
+            <li>
+              <strong> < ol> y < ul>:</strong> Son etiquetas para listas, siendo
+              ol para listas ordenadas y ul para listas sin ordenar.
+            </li>
+            <li>
+              <strong> < link>:</strong> Permite enlazar un archivo CSS al de
+              HTML.
+            </li>
+          </ul>
+        </li>
+      </ul>
     </div>
     <div class="category">
-        <h1>JavaScript</h1>
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
+      <h1>CSS</h1>
+      <ul>
+        <li>
+          <h2>
+            ¿Qué es CSS y cómo se utiliza para dar estilo a una página web?
+          </h2>
+          <p>
+            CSS es un lenguaje que se encarga de darle estilo al código de HTML.
+            Si HTML es el cuerpo de la página, CSS se encarga de elegir un
+            outfit que lo haga verse bien. Esto se puede hacer de muchas formas,
+            pero la más usada es crear un archivo CSS y enlazarlo en la etiqueta
+            <strong>head</strong> utilizando la etiqueta <strong>link</strong>.
+          </p>
+        </li>
+        <li>
+          <h2>¿Cuáles son las propiedades más importantes de CSS?</h2>
+          <ul style="list-style: none">
+            <li>
+              <strong>background: </strong> Permite cambiar el fondo de un
+              elemento, ya sea a una imagen, color o textura.
+            </li>
+            <li>
+              <strong>color: </strong>Cambia el color del texto de un elemento
+            </li>
+            <li>
+              <strong>font-size: </strong>Cambia el tamaño de la letra de un
+              elemento
+            </li>
+            <li>
+              <strong>opacity: </strong>Controla la opacidad de un elemento, es
+              decir que tan visible es.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h2>Explica el modelo de caja (box model) en CSS</h2>
+          <p>
+            Consiste en organizar los objetos en "cajas" que cuentan con 4
+            áreas.
+          </p>
+          <p>
+            <strong>Contenido: </strong> Área donde se muestra el texto, imagen
+            o cualquier contenido que se quiera mostrar.
+          </p>
+          <p>
+            <strong>Relleno (padding): </strong> Espacio entre el contenido y el
+            borde del elemento.
+          </p>
+          <p>
+            <strong>Borde: </strong> Es la línea que rodea al contenido y el
+            padding. Este puede ser visible o no, dependiendo del diseño de la
+            página.
+          </p>
+          <p>
+            <strong>Margen: </strong>Es el espacio entre los elementos
+            adyacentes.
+          </p>
+        </li>
+        <li>
+          <h2>¿Qué es el diseño responsive y como se logra en CSS?</h2>
+          <p>
+            Normalmente cuando una página excede el tamaño de la pantalla del
+            usuario, algunos elementos dejan de ser visibles y requieren
+            scrollear para poder ser vistos. El diseño responsive se encarga de
+            adaptar el tamaño de la página y sus elementos dependiendo del
+            tamaño de la pantalla del usuario. Este se puede lograr de 2 formas:
+          </p>
+          <p>
+            <strong>Uso de unidades relativas: </strong>Si se utilizan unidades
+            relativas para dar tamaño a los elementos de la página, estos se
+            adaptaran automáticamente a la pantalla. Por ejemplo, si en lugar de
+            darle un tamaño de 100px a un elemento le decimos que ocupe el 5% de
+            la pantalla, este crecerá o disminuirá su tamaño para adaptarse a la
+            pantalla que este utilizando el usuario siempre.
+          </p>
+          <p>
+            <strong>Uso de media queries: </strong> Utilizamos la propiedad
+            @media de css, le damos un tamaño de pantalla máximo y ponemos
+            dentro las propiedades de los elementos. Este método tiene la
+            ventaja de poder darle diseños distintos a un mismo elemento
+            dependiendo de la pantalla del usuario, así que un elemento que es
+            azul para pantallas de 480 píxeles puede ser rojo en las pantallas
+            de 768.
+          </p>
+        </li>
+      </ul>
     </div>
-</body>
+    <div class="category">
+      <h1>JavaScript</h1>
+      <ul>
+        <li>
+          <h2>¿Qué es JavaScript y cómo se integra en el desarrollo web?</h2>
+          <p>
+            JavaScript es un lenguaje de programación y este se encarga de la
+            lógica parte lógica de las páginas web. También permite utilizar
+            cosas como alertas, cuadros de dialogo, etc.
+          </p>
+        </li>
+        <li>
+          <h2>
+            Explica como JavaScript interactúa con el HTML y CSS a través del
+            DOM
+          </h2>
+          <p>
+            Se utiliza JavaScript para insertar elementos nuevos al html o
+            eliminar elementos ya existentes.
+          </p>
+        </li>
+        <li>
+          <h2>
+            Proporciona ejemplos de cómo JavaScript puede hacer que una página
+            web sea interactiva
+          </h2>
+          <ul>
+            <li>
+              Agregando un apartado de contacto, en el cual JavaScript se
+              encargará de enviar el correo con la información escrita por el
+              usuario.
+            </li>
+            <li>
+              Agregar animaciones al hacer scroll. Insertando código html con
+              JavaScript y hacer que este tenga una animación al aparecer
+            </li>
+            <li>
+              Agregar un botón que te lleve de regreso al inicio de la página y
+              este tenga una animación.
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="category">
+      <h1>Git / Github</h1>
+      <ul>
+        <li>
+          <h2>¿Qué es git y por qué es importante para el desarrollo web?</h2>
+          <p>Git es una herramienta que permite llevar el control de versiones de un proyecto. Esto sirve para llevar registro de los cambios realiados en una página web</p>
+        </li>
+        <li></li>
+      </ul>
+    </div>
+  </body>
 </html>
