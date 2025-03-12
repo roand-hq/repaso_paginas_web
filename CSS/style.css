@@ -53,3 +53,19 @@ body {
   border-radius: 10px;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
+
+.category > a{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: none;
+  border-radius: 10px;
+  display: inline-block;
+  color: #2e4a3e;
+  font-size: large;
+  padding: 0.9em;
+  background: #e6f0e6;
+  transition: 0.45s;
+}
+.category >a:hover {
+  background: #b2ceb2;
+  
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Descuento</title>
+  <link rel="stylesheet" href="CSS/store.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Calculadora de Descuento</h1>
+    <form id="discount-form">
+      <label for="amount">Introduce el monto de la compra ($):</label>
+      <input type="number" id="amount" placeholder="Monto de compra" required>
+      <button type="submit" id="btnNose" onclick="calcular()">Calcular Descuento</button>
+    </form>
+    <div id="result">
+      <p>Descuento Aplicado: <span id="discount-amount">$0.00</span></p>
+      <p>Total después de descuento: <span id="total-amount">$0.00</span></p>
+    </div>
+  </div>
+
+  <!-- Enlace de regreso -->
+  <a href="index.html" class="back-link">Regresar</a>
+
+</body>
+<script>
+
+    function calcular(){
+        let monto = document.getElementById("amount").value;
+        if(monto < 500){
+            let descuentoAplicado = monto * 0.05;
+            
+        }
+    }
+</script>
+</html>
