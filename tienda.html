@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Calculadora de Descuento</title>
   <link rel="stylesheet" href="CSS/store.css">
+  <link rel="shortcut icon" type="image/x-icon" href="https://w7.pngwing.com/pngs/402/630/png-transparent-calculator-ios-glyphs-icon-thumbnail.png"
 </head>
 <body>
   <div class="container">
@@ -12,7 +13,7 @@
     <form id="discount-form">
       <label for="amount">Introduce el monto de la compra ($):</label>
       <input type="number" id="amount" placeholder="Monto de compra" required>
-      <button type="submit" id="btnNose" onclick="calcular()">Calcular Descuento</button>
+      <button  id="btnNose" onclick="calcular()">Calcular Descuento</button>
     </form>
     <div id="result">
       <p>Descuento Aplicado: <span id="discount-amount">$0.00</span></p>
@@ -27,10 +28,22 @@
 <script>
 
     function calcular(){
+      event.preventDefault();
         let monto = document.getElementById("amount").value;
         if(monto < 500){
             let descuentoAplicado = monto * 0.05;
-            
+            document.getElementById("discount-amount").textContent ="$" + descuentoAplicado.toFixed(2)
+            document.getElementById("total-amount").textContent = "$" + (monto - descuentoAplicado).toFixed(2)
+        }
+        if(monto >= 500 && monto <=999){
+            let descuentoAplicado = monto * 0.1;
+            document.getElementById("discount-amount").textContent ="$" + descuentoAplicado.toFixed(2)
+            document.getElementById("total-amount").textContent = "$" + (monto - descuentoAplicado).toFixed(2)
+        }
+        if(monto >= 1000){
+            let descuentoAplicado = monto * 0.15;
+            document.getElementById("discount-amount").textContent ="$" + descuentoAplicado.toFixed(2)
+            document.getElementById("total-amount").textContent = "$" + (monto - descuentoAplicado).toFixed(2)
         }
     }
 </script>

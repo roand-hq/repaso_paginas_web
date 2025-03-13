@@ -9,6 +9,7 @@ body {
   background-color: #fff8e1;
   border-radius: 10px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
 }
 
 .category h1 {
@@ -24,6 +25,7 @@ body {
 .category ul {
   list-style: none;
   padding: 0;
+  text-align: center;
 }
 
 .category li {
@@ -31,6 +33,7 @@ body {
   margin: 15px 0;
   padding: 15px;
   border-radius: 10px;
+  text-align: center;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -43,7 +46,8 @@ body {
 .category p {
   font-size: 1em;
   line-height: 1.6;
-  text-align: justify;
+  text-align: center;
+  letter-spacing: 0.5px;
 }
 
 .category li > ul > li {
